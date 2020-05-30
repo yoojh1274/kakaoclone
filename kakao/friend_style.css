@@ -1,0 +1,191 @@
+:root {
+  --black-color: #1b1b1b;
+  --grey-color: #8d8d8d;
+  --grey-dark-color: #707070;
+  --green-color: #00c853;
+
+  --text-small: 14px;
+  --text-medium: 18px;
+  --text-large: 23px;
+
+  --padding: 20px;
+}
+body {
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.statusBar {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--text-medium);
+  color: var(--grey-dark-color);
+  margin: 9px 26px;
+}
+
+.statusBar .icons i {
+  font-size: 15px;
+}
+
+.menu {
+  margin: var(--padding);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu .friend {
+  font-size: var(--text-large);
+}
+
+.menu > .icons {
+  font-size: 24px;
+}
+
+.menu > .icons i {
+  margin-left: 24px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: var(--padding);
+  border-bottom: thin solid #e0e0e0;
+  padding-bottom: 20px;
+}
+
+.info .profile {
+  display: flex;
+  align-items: center;
+}
+
+.info .profile .name {
+  font-size: var(--text-medium);
+}
+.info .profile img {
+  width: 73px;
+  height: 73px;
+  border-radius: 35%;
+  margin-right: 16px;
+}
+
+.info .musicPlayer {
+  display: flex;
+  align-items: center;
+  border: 1.6px solid var(--green-color);
+  border-radius: 20px;
+  padding: 9px;
+  font-size: 13px;
+}
+
+.info .musicPlayer .musicTitle {
+  display: inline-block;
+  width: 180px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.info .musicPlayer i {
+  font-size: 22px;
+}
+
+.list {
+  margin: var(--padding);
+}
+
+.list .title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list .title .subtitle {
+  margin-bottom: 10px;
+  font-size: var(--text-small);
+  color: var(--grey-color);
+}
+
+.list .toggleBtn {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: none;
+}
+
+.list .toggleBtn > span {
+  color: var(--grey-color);
+}
+
+.list .friendList .friendName {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  font-size: var(--text-medium);
+}
+
+.list .friendList .friendName img {
+  width: 53px;
+  height: 53px;
+  border-radius: 20px;
+  margin-right: 16px;
+}
+
+.bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 28px;
+  padding: 0 52px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fafafa;
+}
+
+.bottom a {
+  color: var(--black-color);
+  margin: 21px 0px;
+}
+
+@media screen and (min-width: 510px) {
+  .statusBar {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+  .chat {
+    display: none;
+  }
+  .bottom {
+    display: none;
+  }
+  .chattingRoom {
+    display: none;
+  }
+  .searchBar {
+    display: none;
+  }
+  .list {
+    display: none;
+  }
+  .info {
+    display: none;
+  }
+  .bigScreen {
+    height: 100vh;
+    display: flex;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  body {
+    background-color: darkgoldenrod;
+  }
+}
