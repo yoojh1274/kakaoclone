@@ -152,6 +152,10 @@ body {
   margin: 21px 0px;
 }
 
+.bigScreen {
+  display: none;
+}
+
 @media screen and (min-width: 510px) {
   .statusBar {
     display: none;
